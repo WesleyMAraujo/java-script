@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>ex003</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: darkgray;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px;
+            width: 700px;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- HTML -->
+        <h1>Tipos primitivos</h1>
+        <p>em caso de apresentação de soma, se feito de forma normal os numeros irão apenas concatenas.</p>
+        <p>podemos resolver com um cast</p>
+        <p>var n1 = window.prompt('digite um numero')</p>
+        <p><strong>var n1 = Number.parseFloat(window.prompt('digite um numero'))</strong></p>
+        <p>ou podemos simplesmente usar <strong>Number(window.prompt('digite um numero'))</strong></p>
+        <p>para converter para string basta apenas usar <strong>string(s)</strong></p>
+        <p>para imprimir resultados com varias variaveis usando CRASE: ´´. <strong>`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`</strong></p>
+        <code>
+            var n1 = Number(window.prompt('digite um numero')) <br>
+            var n2 = Number(window.prompt('digite outro numero')) <br>
+            var s = n1 + n2 <br>
+            window.alert(`A soma entre ${n1} e ${n2} é igual a : ${s}`) <br>
+        </code>
+        <p>
+            <strong>s.length</strong> quantos caracteres a string tem <br>
+            <strong>s.toUpperCase()</strong> tupara para maiusculas <br>
+            <strong>s.toLowerCase()</strong> tudo para minuscula <br>
+        </p>
+
+        <!-- JS -->
+        <script>
+            /* window.prompt envia o valor para a variavel como string */
+            var n1 = Number(window.prompt('digite um numero'))
+            var n2 = Number(window.prompt('digite outro numero'))
+            var s = n1 + n2
+            window.alert(`A soma entre ${n1} e ${n2} é igual a : ${s}`)
+           /*
+             concatenação
+             + adição
+             + concatenação
+             */
+        </script>
+    </main>
+</body>
+
+</html>
