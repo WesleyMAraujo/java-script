@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>extranjeiro ou não</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="confirmar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+    <script>
+        var txtpais = document.getElementById('pais')
+        var res = document.getElementById('res')
+        function verificar() {
+            //var pais = (txtpais.value)
+            res.innerHTML = `<p>Vivendo no ${txtpais}</p>`
+            if (txtpais == 'Brasil') {
+                res.innerHTML += `Você é Brasileiro`
+            } else {
+                res.innerHTML += `Você é extranjeiro`
+            }
+        }
+
+    </script>
+</body>
+
+</html>
