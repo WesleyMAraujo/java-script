@@ -20,8 +20,8 @@
         var txtpais = document.getElementById('pais')
         var res = document.getElementById('res')
         function verificar() {
-            res.innerHTML = `<p>Vivendo no ${txtpais}</p>`
-            if (txtpais == 'Brasil') {
+            res.innerHTML = `<p>Vivendo no ${txtpais.value}</p>`
+            if (txtpais.value == 'Brasil') {
                 res.innerHTML += `Você é Brasileiro`
             } else {
                 res.innerHTML += `Você é extranjeiro`

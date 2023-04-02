@@ -20,7 +20,7 @@ switch (diaSem) {
     case 6:
         console.log('Sabado')
         break
-    case 7:
+    case 0:
         console.log('Domingo')
         break
     default:
